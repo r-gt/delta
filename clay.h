@@ -5325,3 +5325,12 @@ static void SDL_Clay_RenderClayCommands(Clay_SDL3RendererData *rendererData, Cla
 		}
 	}
 }
+
+
+void HandleClayErrors(Clay_ErrorData errorData) {
+    // See the Clay_ErrorData struct for more information
+    printf("%s", errorData.errorText.chars);
+    switch(errorData.errorType) {
+        // etc
+    }
+}
